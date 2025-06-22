@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        
+        
+         #vista{
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            margin-left: 105px;
+            margin-top: 30px;
+            position: sticky;
+            top: 400px;
+         }
+         *{
+            
+            padding: 0px;
+            margin: 0px;
+        }
+        header>nav{
+            margin-left: 670px;
+            margin-top: -40px;
+            position: sticky;
+            top: 400px;
+
+        }
+        header>nav>a{
+            margin-right: 25px;
+            text-decoration: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        #log{
+            color: #fd4f4f;
+        }
+        header>nav>button{
+            color: white;
+            background-color: transparent;
+            border: 1.5px solid white;
+            border-radius: 5px;
+            margin-left: -10px;
+            padding: 13px;
+
+        }
+        header>nav>button:hover{
+            border: 1.5px solid rgb(86, 132, 201);
+            color: #000000;
+            background-color: rgb(86, 132, 201);
+            transition-duration: 1s;
+        }
+        #icon2{
+            margin-right: 20px;
+        }
+        #datap{
+            font-size: 88px;
+            font-family:Arial, Helvetica, sans-serif;
+            
+            
+        }
+        #data2{
+
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-top: 40px;
+        }
+        #data{
+            margin-left: 70px;
+            margin-top: 90px;
+            color: white;
+        }
+        #data>button{
+            background-color: #fd4f4f;
+            padding: 17px 28px;
+            border-radius: 7px;
+            border: 1px solid ;
+            font-size: 17px;
+            margin-top: 50px;
+        }
+        #data>button:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            transition-duration: 1s;
+            transition-timing-function: calc();
+            
+        }
+        body{
+            background-image: url(https://static.wixstatic.com/media/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg/v1/fill/w_1898,h_1950,al_b,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2119733e838e4a2f8813ebde736f99d5~mv2.jpg);
+            background-repeat: no-repeat;
+            background-color: #161616; 
+            background-position: center;
+            background-position-y:-300px ;
+
+        }
+        header{
+            position:sticky;
+            background-color: #161616;
+            
+            padding: 1px 0px 35px 0px;
+        }
+        #box1{
+            color: rgb(148, 143, 143);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border:1px solid rgb(148, 143, 143);
+            width: 450px;
+            justify-items: center;
+            
+            align-content: center;
+            background-image: url(https://static.wixstatic.com/media/c837a6_eb322a4179e54d788eef6896e67f05d0~mv2.jpg/v1/fill/w_674,h_1056,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_eb322a4179e54d788eef6896e67f05d0~mv2.jpg);
+            height: 710px;
+            margin-left: 70px;
+        }
+        #h11{
+            color: aliceblue;
+            font-size: 32px;
+            
+            margin-bottom: 25px;
+        }
+        #box2{
+            width: 670px;
+            border: 1px solid rgb(148, 143, 143);
+            margin-left: 521px;
+            height: 710px;
+            margin-top: -711.1px;
+            background-color: #161616;
+        }
+        .card{
+            height: 345px;
+            width: 240px;
+            /* border: 1px solid rgb(148, 143, 143); */
+            border-radius: 10px;
+            background-color: #202123;
+            box-shadow:#202123;
+            
+        
+        }
+        #card1{
+            margin-left: 60px;
+            margin-top:     -115px;
+        }
+        #card2{
+            margin-left: 60px;
+            margin-top:     15px;
+        }
+        #card3,#card4{
+            margin-left: 317px;
+            margin-top: 15px;
+        }
+        #card3{
+            margin-top: -520px;
+        }
+        .h111{
+            font-family:sans-serif;
+            font-size: 18px;
+            color: rgb(86, 132, 201);
+            margin-top: 40px;
+            margin-left: 30px;
+            margin-right: 30px;
+            
+            
+        }
+        .para2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+            font-size: 14px;
+            color:rgb(148, 143, 143);
+
+        }
+        .line{
+            margin-top: 30px;
+            width: 75%;
+            border-radius: 5px;
+            align-self: center;
+            justify-self: center;
+            color: rgb(148, 143, 143);
+            border: 3px solid rgb(148, 143, 143);
+        }
+        #box21,#box22{
+            border: 1px solid rgb(148, 143, 143);
+            height: 800px;
+        }
+        #box21{
+            color: rgb(255, 255, 255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border:1px solid rgb(148, 143, 143);
+            width: 44.4%;
+            justify-items: center;
+            
+            align-content: center;
+            margin-left: 70px;
+            background-image: url(https://static.wixstatic.com/media/c837a6_41aece62e57346379d12018aece18ea2~mv2.jpg/v1/fill/w_840,h_1197,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_41aece62e57346379d12018aece18ea2~mv2.jpg);
+            background-size: cover;
+        }
+        #box22{
+            color: rgb(148, 143, 143);
+            
+            border:1px solid rgb(148, 143, 143);
+            width: 44.4%;
+            justify-items: center;
+            
+            align-content: center;
+            margin-left: 632px;
+            margin-top: -801.8px;
+        }
+        #h333{
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            
+        }
+        #h331{
+            font-size: 18px;
+            font-family:sans-serif;
+            margin-left: 50px;
+            
+        }
+        #box22>button{
+            background-color: #fd4f4f;
+            padding: 17px 28px;
+            border-radius: 5px;
+            border: 1px solid ;
+            font-size: 17px;
+            margin-top: 50px;
+            margin-left: -170px;
+        }
+        #box22>button:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            transition-duration: 1s;
+            transition-timing-function: calc();
+        }
+        #h444{
+            font-size: 33px;
+            color: aliceblue;
+            font-family:sans-serif;
+            margin-left: 400px
+        }
+        #back2{
+
+            background-image: url(https://static.wixstatic.com/media/c837a6_d11c6c437c0f4feb9de8591b42ead168~mv2.jpg/v1/fill/w_1898,h_1343,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d11c6c437c0f4feb9de8591b42ead168~mv2.jpg);
+            background-position-y: -130px ;
+            background-size:contain;
+            background-repeat: no-repeat;
+            display: flex;
+            padding: 70px 0px 0px 164px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .h11{
+            color: #fd4f4f;
+            font-size: 60px;
+            justify-self: center;
+
+        }
+        .h12{
+            font-size: 15px;
+            color: rgb(148, 143, 143);
+            justify-self: center;
+        }
+        .line11{
+            border: 3px solid rgb(148, 143, 143);
+            border-radius: 20px;
+            margin-top: 30px;
+            color: rgb(148, 143, 143);
+            justify-items: normal;
+            width: 150px;
+        }
+        #c11,#c12,#c13,#c14,#c15{
+            margin-right: 40px;
+            
+        }
+        #box55{
+            display: flex;
+            margin-left: 70px;
+            margin-top: -900px;
+        }
+        .box52{
+            border: 1px solid rgb(148, 143, 143);
+            padding: 65px 50px;
+            width:123px;
+            justify-items: center;
+            align-content: center;
+
+
+        }
+        #box51>p{
+            font-size: 35px;
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+        #box61,#box62{
+            border: 1px solid rgb(148, 143, 143);
+        }
+        #box61{
+            height: 700px;
+            width: 672px;
+            margin-left: 70px;
+            background-image: url(./c837a6_159e86d4444649fcada7bff77ae670adf000.png);
+            background-repeat: no-repeat;
+            background-position:center;
+            align-content: center;
+        }
+        #box62{
+            height: 700px;
+            width: 448px;
+            margin-left: 742.8px;
+            margin-top: -701px;
+            align-content: center;
+        }
+        #box61>div>p{
+            font-size: 35px;
+            color: aliceblue;
+            font-family: sans-serif;
+            align-items: center;
+            justify-self: center;
+        }
+        #box62>p{
+            font-size: 19px;
+            color: rgb(148, 143, 143);
+            justify-self: center;
+        }
+        #box62>button{
+            background-color: #fd4f4f;
+            padding: 17px 28px;
+            border-radius: 5px;
+            border: 1px solid ;
+            font-size: 17px;
+            margin-top: 50px;
+            margin-left: 72px;
+        }
+        #box62>button:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            transition-duration: 1s;
+            transition-timing-function: calc();
+        }
+        #vista2{
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            margin-left: 40px;
+            
+            margin-bottom: 50px;
+        }
+        #col1>p{
+            font-size: 18px;
+            font-family:sans-serif;
+            
+            margin-top: 16px;
+            
+            
+        }
+        #foot{
+            color: rgb(148, 143, 143);
+            display: flex;
+        }
+        #col1{
+            margin-left: 70px;
+        }
+        #col2{
+            margin-left: 165px;
+            display: grid;
+            margin-top: 15px;
+            
+            
+        }
+        #col2>a{
+            text-decoration: none;
+            font-size: 18px;
+            font-family:sans-serif;
+            color: rgb(148, 143, 143);
+            margin-bottom: 35px;
+            
+        }
+        #col2>button{
+            background-color: #fd4f4f;
+            padding: 17px 28px;
+            border-radius: 5px;
+            border: 1px solid ;
+            font-size: 17px;
+            margin-top: 17px;
+            
+        }
+        #col2>button:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            transition-duration: 1s;
+            transition-timing-function: calc();
+        }
+        #col3>p{
+            font-size: 18px;
+            font-family:sans-serif;
+            color: rgb(148, 143, 143);
+            margin-bottom: 25px;
+        }
+        #col3{
+            margin-top: 17px;
+            margin-left: 88px;
+            font-family:sans-serif;
+ 
+
+        }
+        #email1{
+            width: 280px;
+            height: 35px;
+            border-radius: 7px;
+            border: 1px solid rgb(148, 143, 143);
+            background-color: #161616;
+            color: rgb(148, 143, 143);
+
+        }
+        #email1:focus{
+            border-radius: 7px;
+            border: 1px solid rgb(148, 143, 143);
+            background-color: #161616;
+            color: rgb(148, 143, 143);
+        }
+        #cbox1{
+            background-color: #202123;
+            color: #202123;
+            accent-color:#202123;
+        }
+        #button1{
+            color: rgb(148, 143, 143);
+            background-color: transparent;
+            border: 1px solid rgb(148, 143, 143);
+            border-radius: 5px;
+            margin-left: px;
+            padding: 10px 13px;
+            width: 130px;
+            font-size: 16px;
+
+
+        }
+        #button1:hover{
+            border: 1px solid rgb(86, 132, 201);
+            color: #000000;
+            background-color: rgb(86, 132, 201);
+            transition-duration: 1s;
+
+        }
+        #col4{
+            margin-top: 18px;
+            margin-left: 80px;
+        }
+        #cr1{
+            font-size: 15px;
+            font-family:sans-serif;
+            color: rgb(148, 143, 143);
+        }
+        #fol1{
+            font-size: 18px;
+            font-family:sans-serif;
+            color: rgb(148, 143, 143);
+            
+        }
+        #col4>img{
+            margin: 3px;
+        }
+        #col4>p>a{
+            color: rgb(148, 143, 143);
+        }
+        #dm{
+            height: 65px;
+            width: 65px;
+            right: 70px;
+            bottom: 70px;
+            
+            position:fixed;
+            border-radius: 10px;
+            border: 1px red;
+            
+            background-color: #fd4f4f;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="vista">
+             
+            <p>VISTA.IO</p>
+            
+           
+        </div>
+
+         <nav>
+                
+            <a href="">Solutions</a>
+            <a href="">Vision</a>
+            <a href="">Programs</a>
+            <a href="">Blog</a>
+            <!-- <i class="fa-duotone fa-solid fa-circle-user" style="--fa-primary-color: #000000; --fa-secondary-color: #ff0000; --fa-secondary-opacity: 0.8;"></i> -->
+            <i class="fa-solid fa-circle-user fa-xl" id="icon2" style="color: #fd4f4f;"></i>
+            <a id="log" href="">Log In</a>
+            <button>Get Started</button>
+
+            </nav>
+    </header>
+
+    <!-- section 2 -->
+
+    <div id="data" data-aos="fade-right">
+        <p id="datap">The New Standard <br> in Data Analysis</p>
+        <p id="data2">Use Data to Get a 360-Degree <br> View of Your Business</p>
+        <button>Learn More</button>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div id="box1">
+        <div data-aos="fade-up">
+            <p id="h11">Let Your Data Take <br> Your Business to <br> Higher Grounds</p>
+        <p>I'm a paragraph. Click here to add <br> your own text and edit me. It’s easy. <br> Just click “Edit Text” or double click me <br> to add your own content and make <br> changes to the font. </p>
+        </div>
+
+        
+    </div>
+
+    <div id="box2" >
+        <div class="card" id="card1" data-aos="fade-up">
+        <br><br><br><br><br>
+            <p class="h111"><b>Cloud Analytics Modernization</b></p>
+            
+            <p class="para2">I'm a paragraph. Click here to add your own text and edit me. Let your users get <br> to know you.</p>
+            <hr class="line">
+        </div>
+        <div class="card" id="card2" data-aos="fade-up">
+            <br><br><br><br>
+            <p class="h111"><b>Versatility in <br> Application</b></p>
+            <p class="para2">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+            <hr class="line">
+        </div>
+
+        <div class="card" id="card3" data-aos="fade-up">
+            <br><br><br><br>
+            <p class="h111"><b>Data Science Acceleration</b></p>
+            <p class="para2">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+            <hr class="line">
+        </div>
+        <div class="card" id="card4" data-aos="fade-up">
+            <br><br><br><br>
+            <p class="h111"><b>Full Customer Experience Service</b></p>
+            <p class="para2">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+            <hr class="line">
+        </div>
+    </div>
+
+
+    <!-- this is section 2 -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div id="box21">
+        <p id="h333" data-aos="fade-up">
+            Unprecedented Velocity. <br> &nbsp; Impeccable Reliability.
+        </p>
+    </div>
+    <div id="box22">
+        <p id="h331" data-aos="fade-right">
+            I'm a paragraph. Click here to add your own <br> text and edit me. It’s easy. Just click “Edit Text” or <br> double click me to add your own content and <br> make changes to the font. Feel free to drag and <br> drop me anywhere you like on your page. I’m a <br> great place for you to tell a story and let your <br> users know a little more about you.
+
+            <br><br><br>
+
+            This is a great space to write a long text about <br> your company and your services. You can use <br> this space to go into a little more detail about <br> your company. Talk about your team and what <br> services you provide. Tell your visitors the story <br> of how you came up with the idea for your <br> business and what makes you different from <br> your competitors. Make your company stand <br> out and show your visitors who you are.
+        </p>
+
+        <button data-aos="fade-right">
+            Learn More
+        </button>
+    </div>
+
+    <!-- this is section 3 -->
+
+    <br><br><br><br>
+
+    <p id="h444" data-aos="fade-up">
+        We Take Pride in Our Numbers
+    </p>
+
+    <div id="back2">
+        <div id="c11">
+        <p class="h11" data-aos="fade-right">15</p>
+        <p class="h12">Years of Experience</p>
+        <hr id="line1" class="line11">
+        </div>
+        <div id="c12">
+        <p class="h11" data-aos="fade-right">10K</p>
+        <p class="h12" data-aos="fade-right">Business Partners</p>
+        <hr id="line1" class="line11" data-aos="fade-right">
+        </div>
+        <div id="c13">
+        <p class="h11" data-aos="fade-right">25M</p>
+        <p class="h12" data-aos="fade-right">Products Installed</p>
+        <hr id="line1" class="line11" data-aos="fade-right">
+        </div>
+        <div id="c14">
+        <p class="h11" data-aos="fade-right">22</p>
+        <p class="h12" data-aos="fade-right">Countries World Wide</p>
+        <hr id="line1" class="line11" data-aos="fade-right">
+        </div>
+        <div id="c15">
+        <p class="h11" data-aos="fade-right">5</p>
+        <p class="h12" data-aos="fade-right">Industry Awards</p>
+        <hr id="line1" class="line11" data-aos="fade-right">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+
+    <!-- this is section 4 -->
+
+    <div id="box55">
+        <div id="box51" class="box52">
+            <p data-aos="fade-right">Our Partners</p>
+        </div>
+        <div id="box521" class="box52">
+            <img src="./Group 16.png" alt="" data-aos="fade-right">
+        </div>
+        <div id="box531" class="box52">
+            <img src="./Group 28.png" alt="" data-aos="fade-right">
+        </div>
+        <div id="box541" class="box52">
+            <img src="./Group 20.png" alt="" data-aos="fade-right">
+        </div>
+        <div id="box551" class="box52">
+            <img src="./Group 17.png" alt="" data-aos="fade-right">
+        </div>
+    </div>
+    <div id="box61">
+        <div data-aos="fade-up">
+            <p>Are You Ready to Accelerate <br> </p>
+            <p>Your Business?</p>
+        </div>
+    </div>
+    <div id="box62">
+        <p data-aos="fade-right">I'm a paragraph. Click here to add <br> your own text and edit me. It’s easy. <br> Just click “Edit Text” or double click me <br> to add your own content and make <br> changes to the font. 
+
+        </p>
+        <button data-aos="fade-right">
+            Get Started
+        </button>
+    </div>
+
+
+
+
+    <!-- this is section 5 -->
+
+    <br><br><br><br><br>
+     
+
+    <div id="foot">
+        <div id="col1">
+            <p id="vista2">VISTA.IO</p>
+            <p>123-456-7890</p>
+            <p>Info@mysite.com</p>
+            <p>500 Terry Francine St </p>
+            <p>San Francisco, CA 94158</p>
+        </div>
+        <div id="col2">
+            <a href="">Solutions</a>
+            <a href="">Vision</a>
+            <a href="">Programs</a>
+            <a href="">Blog</a>
+
+            <button>
+                Get Started
+            </button>
+        </div>
+        <div id="col3">
+            <p>Subscribe to Our Newsletter</p>
+            <form action="">
+                <label for="email1">Email *</label> <br>
+                <input type="text" id="email1" name="email">
+                <br><br><br>
+                <input type="checkbox" name="cbox" id="cbox1">
+                <label for="cbox1">Yes,subscribe me to your newsletter</label>
+                <br><br>
+                <button id="button1">Submit</button>
+            </form>
+        </div>
+        <div id="col4">
+            <p id="fol1">Follow Us On:</p>
+            <br>
+            <img src="./8efda6398c724b5ea342287bfe3f5ed0.png" alt="">
+            <img src="./ce6ec7c11b174c0581e20f42bb865ce3.png" alt="">
+            <img src="./444f49eac2e348f89128293b0c6432fd.png" alt="">
+
+            <br><br><br><br><br><br><br><br><br><br>
+
+            <p id="cr1">© 2035 by Vista.io. <br> Powered and <br> secured by <a href="https://www.wix.com">Wix</a></p>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <button id="dm">
+        <i class="fa-solid fa-comment fa-2xl" style="color: #101010;"></i>
+    </button>
+
+    <br><br><br>
+
+    
+    
+    
+    
+    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+</html>
