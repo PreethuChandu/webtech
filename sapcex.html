@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacex</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    }
+    a:visited{
+    color: #fff;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        color: aliceblue;
+        gap: 0px;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position:sticky;
+        /* top: ; */
+
+    }
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        gap:25px;
+        margin-left: -35px;
+        position: relative;
+    }
+    #nav2{
+        /* border: 2px solid rgb(215, 201, 201); margin-left: 45px; */
+        display:flex;
+        justify-content: space-evenly;
+        gap: 25px;
+
+    }
+    li{
+        list-style-type: none;
+    }
+    #men{
+        font-size: 15px;
+        line-height: 20px;
+    display:none;
+    position: absolute;
+    }
+    #mens:hover #men{
+        display: block;
+        
+    }
+    .a1{color: grey;}
+    .a1:hover{color: #fff;}
+
+    /* header finished,now its body */
+    h2{
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .container{ 
+        /* border: 2px solid red; */
+        width: 1010;
+        height: 350px;
+        text-align: center;
+        font-size: 13px;
+        display: flex;
+        justify-content:space-around;
+    
+    }
+    .card{
+        
+    /* border: 1px solid blue; */
+    height: 306px;
+    width: 304px;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    }
+    .card:hover{
+    height: 306px;
+    width: 304px;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    }
+
+    .card>p{
+        /* border: 1px solid palevioletred; */
+        position: relative;
+        top: 315px;
+    
+    padding-top: 5px;
+    }
+
+    /* div>div>img{
+        height: 306px;
+        width: 302px;
+        /* border: 1px solid rebeccapurple; } */
+    #button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size:13px;
+    width: 205px;
+    height: 46px;
+    }
+
+    /* hover */
+    /* 1st card */
+    #c1c1{  background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Unisex_Starship_Flight_9_Tshirt_900x.png?v=1748392269");}
+    #c1c1:hover{  background-image: url("https://shop.spacex.com/cdn/shop/files/STARSHIP_FLIGHT_9_UNISEX_BLACK_T-SHIRT_FRONT_600x.png?v=1748392269"); }
+    #c1c2{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_9_Mission_Patch_600x.png?v=1748392240");}
+    #c1c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_9_Mission_Patch_600x.png?v=1748392240");}
+    #c1c3{ background-image: url("https://shop.spacex.com/cdn/shop/products/HEATSHIELD_HOODIE_MENS_MEDIUM_BACK_600x.png?v=1689021321");}
+    #c1c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/products/HEATSHIELD_HOODIE_MENS_MEDIUM_CLOSEUP_600x.png?v=1689021321"); }
+
+    /* 2nd card */
+    #c2c1{ background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceXBoosterFullyStacked_600x.png?v=1699917818");}
+    #c2c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/StarshipBoosterOpenedPackaging_400x.png?v=1699917817");}
+    #c2c2{background-image: url("https://shop.spacex.com/cdn/shop/products/Unknown-1_600x.png?v=1681580111 ");}
+    #c2c2:hover{background-image: url(" https://shop.spacex.com/cdn/shop/products/Unknown-2_400x.png?v=1681580111");}
+    #c2c3{background-image: url("https://shop.spacex.com/cdn/shop/files/hotstage_600x.png?v=1710198422 ");}
+    #c2c3:hover{background-image: url(" https://shop.spacex.com/cdn/shop/files/hotstage_booster_1_400x.png?v=1710198422");}
+
+    /* 3rd cards */
+    #c3c1{background-image: url("https://shop.spacex.com/cdn/shop/files/UNISEX_FRAM2_T-SHIRT_NAVY_BACK_24441686-8fc1-4636-8c00-c29abb53067b_800x.png?v=1743782356 ");}
+    #c3c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/UNISEX_FRAM2_T-SHIRT_NAVY_FRONT_ee978dad-72e8-4a46-89ec-e9ed56e46491_400x.png?v=1743782355 ");}
+    #c3c2{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Fram2_Mission_Patch_9510fcfc-ee27-43c9-9ed7-a7d46b2530b6_600x.png?v=1743782269 ");}
+    #c3c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Fram2_Mission_Patch_9510fcfc-ee27-43c9-9ed7-a7d46b2530b6_600x.png?v=1743782269 ");}
+    #c3c3{background-image: url("https://shop.spacex.com/cdn/shop/files/DRAGON_SCALEMODEL_FRONT_600x.png?v=1724454450 ");}
+    #c3c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SPACEX_DRAGON_SCALEMODEL_CLOSEUP2_400x.png?v=1724454451 ");}
+
+    /* 4thcard */
+    #c4c1{background-image: url("https://shop.spacex.com/cdn/shop/files/SPACEX_STARFIGURE_FRONT_QUARTER_RIGHT_600x.png?v=1724454097 ");}
+    #c4c1:hover{background-image: url(" https://shop.spacex.com/cdn/shop/files/SPACEX_STARFIGURE_CLOSEUP_400x.png?v=1724454097");}
+    #c4c2{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_8_Tshirt_Back_600x.png?v=1741304703 ");}
+    #c4c2:hover{background-image: url(" https://shop.spacex.com/cdn/shop/files/STARSHIP_FLIGHT_8_UNISEX_BLACK_T-SHIRT_FRONT_400x.png?v=1741304703");}
+    #c4c3{background-image: url(" https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_8_Patch_600x.png?v=1741304739");}
+    #c4c3:hover{background-image: url(" https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_8_Patch_600x.png?v=1741304739");}
+
+
+    /* 5thcard */
+    #c5c1{background-image: url("https://shop.spacex.com/cdn/shop/files/Starlinktravelcoffeemug_White-S2_800x.png?v=1736558473 ");}
+    #c5c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Starlinktravelcoffeemug_White-S1_400x.png?v=1736558473 ");}
+    #c5c2{background-image: url("https://shop.spacex.com/cdn/shop/files/Starlinktumbler_Black-S1_600x.png?v=1736558202 ");}
+    #c5c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Starlinktumbler_Black-S2_400x.png?v=1736558202");}
+    #c5c3{background-image: url("https://shop.spacex.com/cdn/shop/files/STARLINK-BLANKET-TOTE_600x.png?v=1738085109 ");}
+    #c5c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/STARLINK-BLANKET-NAVY-1_400x.png?v=1738085109");}
+
+    /* 6thcard */
+    #c6c1{background-image: url("https://shop.spacex.com/cdn/shop/products/Cap_StarlinkAdjustable_89b6913b-9f97-43f2-8b4c-d557fb84b41a_600x.png?v=1634588243 ");}
+    #c6c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/products/Cap_Starlink_Adjustable_backcopy_6b155b89-2c25-4f02-a97a-09179ce65ca0_400x.png?v=1634588243");}
+    #c6c2{background-image: url(" https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_7_Tshirt_Back_600x.png?v=1736547938");}
+    #c6c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/STARSHIP_FLIGHT_7_UNISEX_BLACK_T-SHIRT_FRONT_fb62801e-87e5-4462-86af-f6f7820b564c_400x.png?v=1736547938");}
+    #c6c3{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_7_Patch_600x.png?v=1737085560 ");}
+    #c6c3:hover{background-image: url(" https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_7_Patch_600x.png?v=1737085560");}
+
+    /* 7thcard */
+    #c7c1{background-image: url("https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_ZipHoodie_MilitaryGreen_Front_600x.png?v=1746224104");}
+    #c7c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_ZipHoodie_MilitaryGreen_Back_600x.png?v=1746224104");}
+    #c7c2{background-image: url("https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_PulloverHoodie_Charcoal_Front_600x.png?v=1746224079");}
+    #c7c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_PulloverHoodie_Charcoal_Back_400x.png?v=1746224079");}
+    #c7c3{background-image: url("https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_CrewSweatshirt_Black_Front_600x.png?v=1738007606");}
+    #c7c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_CrewSweatshirt_Black_Back_400x.png?v=1738007606");}
+    
+    /* 8thcard */
+    #c8c1{background-image: url("https://shop.spacex.com/cdn/shop/files/Mechazilla_wall_decal_600x.png?v=1731537018");}
+    #c8c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Mechazilla_Booster_S30_decal1_400x.png?v=1731628747");}
+    #c8c2{background-image: url("https://shop.spacex.com/cdn/shop/products/MicrosoftTeams-image_23_600x.png?v=1668472985");}
+    #c8c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/products/Cap_XAdjustable_back_4_400x.png?v=1668473029");}
+    #c8c3{background-image: url("https://shop.spacex.com/cdn/shop/files/Banana_for_scale_wall_decal_600x.png?v=1731536990");}
+    #c8c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SPACEX_BANANAFORSCALE_DECAL_2_400x.jpg?v=1731605836");}
+    
+    /* 9thcard */
+    #c9c1{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_6_Tshirt_Back_Black_600x.png?v=1731359541");}
+    #c9c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SPACEX_STARSHIP_FLIGHT_6_T-SHIRT_BLACK_FRONT_400x.png?v=1731359547");}
+    #c9c2{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_6_Patch_600x.png?v=1731349507");}
+    #c9c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_6_Patch_600x.png?v=1731349507");}
+    #c9c3{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceX_Banana_Plush_Side_View_aa57cc67-bb15-4932-9662-45227bc9881b_600x.png?v=1731722566");}
+    #c9c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/SpaceXBananaZGI_2_48b84adb-cd0e-4a2f-a85b-dda0011ffb91_400x.jpg?v=1732059302");}
+    
+    /* 10thcard */
+    #c10c1{background-image: url("https://shop.spacex.com/cdn/shop/files/Mens_SpaceX_T-Shirt_Black_Front_600x.png?v=1731542708");}
+    #c10c1:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Mens_SpaceX_T-Shirt_Black_Back_400x.png?v=1731542708");}
+    #c10c2{background-image: url("https://shop.spacex.com/cdn/shop/files/Mens_Dragon_T-Shirt-Navy_Front_1f8d4116-05f4-4b26-9137-ba93068c4570_600x.png?v=1731541568");}
+    #c10c2:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Mens_Dragon_T-Shirt-Navy_Back_f0bb8662-7571-4d61-9fa4-ab47228fb5f4_400x.png?v=1731541567");}
+    #c10c3{background-image: url("https://shop.spacex.com/cdn/shop/files/Mens_F9_TSHIRT_Maroon_Front_600x.png?v=1731542151");}
+    #c10c3:hover{background-image: url("https://shop.spacex.com/cdn/shop/files/Mens_F9_TSHIRT_Maroon_Back_400x.png?v=1731542151");}
+
+
+
+
+    /* footer */
+    #footer{
+    
+        background-color: black;
+        /* border: 2px solid red; */
+        height: 265px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 70px;
+    }
+    #spacex{
+    color: grey;
+        background-color: blue;
+        border: 2px solid green;
+        position: relative;
+        top:280px ;
+        left: 70px;
+    
+    
+    }
+    </style>
+    <link rel="stylesheet" href="spacex.css">
+</head>
+<body>
+    <header>
+            <div id="nav">
+            <img height="22" width="80" src="https://shop.spacex.com/cdn/shop/files/SpaceX_logo_white_6eaf0441-42af-4396-974e-d6dc2f8ff45c_160x@2x.png?v=1614778073" alt="">
+            <a id=" mens">MENS
+                <div id="men">
+                <ul>
+                    <li><a href="">Shirts</a></li>
+                    <li><a href="">Outer Wear</a></li>
+                    <li><a href="">View All</a></li>
+                </ul>
+                </div>
+            </a>
+            <a href="">WOMENS</a>
+            <a href="">KIDS</a>
+            <a href="">ACCESORIES</a>
+            <a href="">FLIGHT KIDS</a>
+            </div>
+            <div id="nav2">
+                <a class="a1" href="">ACCOUNT</a>
+                <a class="a1" href="">SEARCH</a>
+                <a href="">CART(0)</a>
+
+            </div>
+        </header>
+        <!-- header finished,now its body -->
+        <main>
+            <div id="rocket">
+            <img height="420" width="100%"  data-aos="zoom-out" src="https://shop.spacex.com/cdn/shop/files/Banner_Starship_Flight_8_1600x.jpg?v=1741653250" alt="">  
+            </div>
+            <h2>TRENDING</h2> <br>
+        <!-- ------ -->
+            <div class="container" id="c1">
+                <div class="card" id="c1c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Unisex_Starship_Flight_9_Tshirt_900x.png?v=1748392269" alt="">  -->
+                <p>Unisex Starship Flight 9 T-Shirt</p>
+                <p>$35.00</p> 
+                </div>
+                <div class="card" id="c1c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_9_Mission_Patch_800x.png?v=1748392240" alt=""> -->
+                    <p>Starship Flight 9 Mission PATCH</p>
+                    <p>$15.00</p>
+                </div>
+                <div class="card" id="c1c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/products/HEATSHIELD_HOODIE_MENS_MEDIUM_BACK_600x.png?v=1689021321" alt=""> -->
+                    <p>UNISEX STATSHIP HEATSHIEL PULLOVER</p>
+                    <p>$65.00</p>
+                </div>
+            </div>   <br><br>
+            <div class="container" id="c2">
+                <div class="card" id="c2c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceXBoosterFullyStacked_600x.png?v=1699917818" alt=""> -->
+                    <p>SUPER HEAVY CHROME MODEL</p>
+                    <p>$499.00</p>
+                </div>
+                <div class="card" id="c2c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/products/Unknown-1_600x.png?v=1681580111" alt=""> -->
+                    <p>STARSHIP CHROME MODEL</p>
+                    <p>$300.00</p>
+                </div>
+                <div class="card" id="c2c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/hotstage_600x.png?v=1710198422" alt=""> -->
+                    <p>HOTSTAGE| BOOSTER UPGRADE KIT</p>
+                    <p></p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c3">
+                <div class="card" id="c3c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/UNISEX_FRAM2_T-SHIRT_NAVY_BACK_24441686-8fc1-4636-8c00-c29abb53067b_800x.png?v=1743782356" alt=""> -->
+                    <p>Unisex SpaceX Fram2 T-Shirt</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c3c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Fram2_Mission_Patch_9510fcfc-ee27-43c9-9ed7-a7d46b2530b6_600x.png?v=1743782269" alt=""> -->
+                    <p>SpaceX Fram2 Mission Patch</p>
+                    <p>$15.00</p>
+                </div>
+                <div class="card" id="c3c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/DRAGON_SCALEMODEL_FRONT_600x.png?v=1724454450" alt=""> -->
+                    <p>SPACEX DRAGON SCALE MODEL</p>
+                    <p>$300.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c4">
+                <div class="card" id="c4c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SPACEX_STARFIGURE_FRONT_QUARTER_RIGHT_600x.png?v=1724454097" alt=""> -->
+                    <p>SPACEX IVA SUIT FIGURE - PRE SALE</p>
+                    <p>$300.00</p>
+                </div>
+                <div class="card" id="c4c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_8_Tshirt_Back_600x.png?v=1741304703" alt=""> -->
+                    <p>Unisex Starship Flight 8 T-Shirt</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c4c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_8_Patch_600x.png?v=1741304739" alt=""> -->
+                    <p>Starship Flight 8 Mission Patch</p>
+                    <p>$15.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c5">
+                <div class="card" id="c5c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Starlinktravelcoffeemug_White-S2_800x.png?v=1736558473" alt=""> -->
+                    <p>Starlink Mug</p>
+                    <p>$30.00</p>
+                </div>
+                <div class="card" id="c5c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Starlinktumbler_Black-S1_600x.png?v=1736558202" alt=""> -->
+                    <p>Starlink Bottle</p>
+                    <p>$40.00</p>
+                </div>
+                <div class="card" id="c5c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/STARLINK-BLANKET-TOTE_600x.png?v=1738085109" alt=""> -->
+                    <p>STARLINK BLANKET AND TOTE</p>
+                    <p>$50.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c6">
+                <div class="card" id="c6c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/products/Cap_StarlinkAdjustable_89b6913b-9f97-43f2-8b4c-d557fb84b41a_600x.png?v=1634588243" alt=""> -->
+                    <p>STARLINK ADJUSTABLE CAP</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c6c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_7_Tshirt_Back_600x.png?v=1736547938" alt=""> -->
+                    <p>Unisex Starship Flight 7 T-Shirt</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c6c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_7_Patch_800x.png?v=1737085560" alt=""> -->
+                    <p>Starship Flight 7 Mission Patch</p>
+                    <p>$15.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c7">
+                <div class="card" id="c7c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_ZipHoodie_MilitaryGreen_Front_600x.png?v=1746224104" alt=""> -->
+                    <p>Unisex SpaceX Zipper Hoodie</p>
+                    <p>$65.00</p>
+                </div>
+                <div class="card" id="c7c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_PulloverHoodie_Charcoal_Front_600x.png?v=1746224079" alt=""> -->
+                    <p>Unisex SpaceX Pullover Hoodie</p>
+                    <p>$65.00</p>
+                </div>
+                <div class="card" id="c7c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Unisex_SpaceX_CrewSweatshirt_Black_Front_600x.png?v=1738007606" alt=""> -->
+                    <p>Unisex SpaceX Sweatshirt</p>
+                    <p>$65.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c8">
+                <div class="card" id="c8c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Mechazilla_wall_decal_800x.png?v=1731537018" alt=""> -->
+                    <p>SPACEX MECHAZILLA WALL DECAL</p>
+                    <p>$75.00</p>
+                </div>
+                <div class="card" id="c8c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/products/MicrosoftTeams-image_23_600x.png?v=1668472985" alt=""> -->
+                    <p>Starship Adjustable Cap</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c8c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Banana_for_scale_wall_decal_600x.png?v=1731536990" alt=""> -->
+                    <p>SPACEX BANANA FOR SCALE WALL DECAL</p>
+                    <p>$75.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c9">
+                <div class="card" id="c9c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_6_Tshirt_Back_Black_600x.png?v=1731359541" alt=""> -->
+                    <p>Unisex Starship Flight 6 T-Shirt</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c9c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Starship_Flight_6_Patch_600x.png?v=1731349507" alt=""> -->
+                    <p>Starship Flight 6 Mission Patch</p>
+                    <p>$15.00</p>
+                </div>
+                <div class="card" id="c9c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/SpaceX_Banana_Plush_Side_View_aa57cc67-bb15-4932-9662-45227bc9881b_800x.png?v=1731722566" alt=""> -->
+                    <p>SPACEX STARSHIP FLIGHT 6 BANANA</p>
+                    <p>$30.00</p>
+                </div>
+            </div> <br><br>
+            <div class="container" id="c10">
+                <div class="card" id="c10c1">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Mens_SpaceX_T-Shirt_Black_Front_600x.png?v=1731542708" alt=""> -->
+                    <p>Men's SpaceX T-Shirt</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c10c2">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Mens_Dragon_T-Shirt-Navy_Front_1f8d4116-05f4-4b26-9137-ba93068c4570_600x.png?v=1731541568https://shop.spacex.com/cdn/shop/files/SpaceX_Unisex_Starship_Flight_9_Tshirt_900x.png?v=1748392269" alt=""> -->
+                    <p>Men's F9 T-Shirt</p>
+                    <p>$35.00</p>
+                </div>
+                <div class="card" id="c10c3">
+                    <!-- <img height="300" width="300" src="https://shop.spacex.com/cdn/shop/files/Mens_F9_TSHIRT_Maroon_Front_600x.png?v=1731542151" alt=""> -->
+                    <p>Men's Dragon T-Shirt</p>
+                    <p>$35.00</p> 
+                </div>
+            </div> <br><br><br><br>
+        <div id="button">
+            <button>VIEW ALL TREDNING</button>
+        </div>
+        </main> 
+        <br><br><br><br>
+        <!-- footer -->
+            <footer>
+            <span id="spacex">
+                <a href="">© SpaceX Store</a>
+            </span>
+            <div id="footer">
+                <a href="">FAQs</a>
+                <a href="">Search</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms & Conditions</a>
+            </div>
+            
+        </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    
+    </body>
+</html>
